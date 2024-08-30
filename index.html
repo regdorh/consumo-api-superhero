@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Encuentra tu SuperHero</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body class="bg-black bg-gradient">
+		<nav class="navbar navbar-dark navbar-expand-lg bg-danger bg-gradient py-1 align-middle shadow">
+			<div class="container-fluid">
+				<a class="navbar-brand py-1" href="#">
+					<img src="assets\img\sh2.jpg" width="50px" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item dropdown ms-auto">
+							<a
+								class="nav-link dropdown-toggle text-light"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Mas sobre SuperHero Api
+							</a>
+							<ul
+								class="dropdown-menu bg-warning bg-gradient"
+								aria-labelledby="navbarDropdownMenuLink"
+							>
+								<li>
+									<a
+										class="dropdown-item bg-warning bg-gradient text-dark"
+										href="https://www.superheroapi.com/index.html"
+										target="_blank"
+										>Documentación</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item bg-warning bg-gradient text-dark"
+										href="https://www.superheroapi.com/ids.html"
+										target="_blank"
+										>Lista de Super héroes</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
+			<header class="hero-section pt-4">
+				<div>
+					<img
+						class="mx-auto d-block img-fluid px-2"
+						src="assets\img\sh1.jpg"
+					/>
+				</div>
+			</header>
+			<section class="container-fluid pt-3 mb-2 text-white">
+				<div class="row">
+					<div
+						class="form w-75 justify-content-center col-md-6 mx-auto text-center"
+					>
+						<h2 id="form_title" style="text-shadow: 2px 2px rgb(88, 88, 88);">Encuentra tu SuperHero</h2>
+						<div class="mb-3">
+							<label for="exampleInputEmail1" id="form-label" class="pb-2"
+								>Ingresa el número ID del SuperHero a buscar</label
+							>
+							<input
+								type="email"
+								class="form-control w-25 mx-auto shadow-lg"
+								id="inputBusqueda"
+								aria-describedby="emailHelp"
+							/>
+							<div id="emailHelp" class="form-text text-secondary text-white-50">
+								Consulta la lista de superhéroes en el menú de navegación
+							</div>
+						</div>
+
+						<button
+							id="btn-buscar"
+							type="submit"
+							class="btn btn-lg btn-danger btn-block mb-3"
+						>
+							Buscar
+						</button>
+					</div>
+				</div>
+			</section>
+			<section
+				class="container-fluid row mx-auto w-75 my-5"
+			>
+				<div class="container-fluid col-12 col-lg-6 pb-5">
+					<div id="heroId"></div>
+				</div>
+					
+				<div class="container-fluid col-12 col-lg-6">
+					<div id="chartContainer"></div>
+				</div>
+			</section>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"
+		></script>
+		<script src="assets\js\script.js"></script>
+	</body>
+</html>
